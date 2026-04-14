@@ -69,7 +69,7 @@ Library
 
   else
     build-depends: unix      >= 2.7.2.0  && < 2.9
-    if arch(wasm32)
+    if arch(wasm32) || arch(javascript)
       c-sources: cbits/mktemp.c
     else
       include-dirs: include

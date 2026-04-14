@@ -1,0 +1,45 @@
+building '/nix/store/iak1cas2anad7s2r7wm4bpzh9ggvcmhz-unix-compat-0.7.4.1.drv'...
+error: Cannot build '/nix/store/iak1cas2anad7s2r7wm4bpzh9ggvcmhz-unix-compat-0.7.4.1.drv'.
+       Reason: builder failed with exit code 1.
+       Output paths:
+         /nix/store/5yvbc4jjm5ss2111mc1sx6sgg168sy23-unix-compat-0.7.4.1
+       Last 25 log lines:
+       >      error: call to undeclared function 'major'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+       >        11 |     return major(dev);
+       >           |            ^
+       >    |
+       > 11 |     return major(dev);
+       >    |            ^
+       >
+       > cbits/HsUnixCompat.c:16:12: error:
+       >      error: call to undeclared function 'minor'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+       >        16 |     return minor(dev);
+2       >           |            ^
+       >    |
+       > 16 |     return minor(dev);
+       >    |            ^
+       >
+       > cbits/HsUnixCompat.c:21:12: error:
+       >      error: call to undeclared function 'makedev'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+       >        21 |     return makedev(maj, min);
+       >           |            ^
+       >    |
+       > 21 |     return makedev(maj, min);
+       >    |            ^
+       >
+       > 3 errors generated.
+       > `emcc' failed in phase `C Compiler'. (Exit code: 1)
+       For full logs, run:
+         nix log /nix/store/iak1cas2anad7s2r7wm4bpzh9ggvcmhz-unix-compat-0.7.4.1.drv
+error: Cannot build '/nix/store/kqrnmkv1gg2m02r9ka8cr41yfnb10s1r-filemanip-0.3.6.3.drv'.
+       Reason: 1 dependency failed.
+       Output paths:
+         /nix/store/8j27zv3yrs8d3f5h3mm56bfzc9sqf16f-filemanip-0.3.6.3
+error: Cannot build '/nix/store/skh7q3mfz84c4yvpij8wynlk02l7b7cm-sr-utils-1.113.drv'.
+       Reason: 1 dependency failed.
+       Output paths:
+         /nix/store/30v58j852bkax4kbp6hwcl4pc2jwa866-sr-utils-1.113
+error: Cannot build '/nix/store/z6sk8swy60j6fhvsxdfi79lqpy5mkm9w-alderon2-0.4.13.drv'.
+       Reason: 1 dependency failed.
+       Output paths:
+         /nix/store/mygp64jvbklvci5k2925fm84fd14gflz-alderon2-0.4.13

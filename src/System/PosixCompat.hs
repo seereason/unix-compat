@@ -25,7 +25,7 @@ import System.PosixCompat.Unistd
 -- | 'True' if unix-compat is using its portable implementation,
 --   or 'False' if the unix package is simply being re-exported.
 usingPortableImpl :: Bool
-#ifdef mingw32_HOST_OS
+#if defined(mingw32_HOST_OS) || defined(javascript_HOST_OS)
 usingPortableImpl = True
 #else
 usingPortableImpl = False
